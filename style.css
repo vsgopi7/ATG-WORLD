@@ -1,0 +1,71 @@
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+  padding: 15px; /* Added padding */
+}
+
+.rectangle-2 {
+  position: relative;
+  text-align: center;
+  padding: 20px 0; /* Added padding */
+}
+
+.rectangle-2 img {
+  width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+
+.nav-pills .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.rounded-circle {
+  width: 30px;
+  height: 30px;
+}
+
+.input-group .form-control {
+  border-radius: 1rem;
+  padding: 10px; /* Added padding */
+}
+
+.btn-create-account {
+  white-space: nowrap;
+  width: auto;
+  display: inline-block;
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATG WORLD</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="bg-light py-3">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-8 col-md-3 ">
+          <a class="navbar-brand" href="#">
+            <img src="images/whole.png" alt="Company Logo" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="search-icon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search for your favourite groups in ATG">
+          </div>
+        </div>
+        <div class="col-4 col-md-3 text-md-right mt-2 mt-md-0 ">
+          <a href="#" class="btn btn-primary btn-sm btn-create-account">
+            Create Account. It's free! <i class="fas fa-caret-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="rectangle-2">
+    <img src="images/Rectangle 2.png" alt="Rectangle 2" class="img-fluid">
+    <div class="image-text">
+      <p>Computer Engineering</p>
+      <p>142,765 computer Engineers follow this</p>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Left side content (navigation) -->
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">All posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Job</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 text-right">
+        <!-- Right side content (buttons) -->
+        <button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#writePostModal">Write a post <i class="fas fa-chevron-down"></i></button>
+        <button class="btn btn-primary btn-sm ml-2" data-toggle="modal" data-target="#joinGroupModal">Join Group <i class="fas fa-users"></i></button>
+      </div>
+
+      <!-- Modal for Join Group -->
+    <div class="modal fade" id="joinGroupModal" tabindex="-1" role="dialog" aria-labelledby="joinGroupModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="joinGroupModalLabel" style="font-size: 16px;">
+                      Let's learn, share & inspire each other with our passion for computer engineering.
+                      <a href="#" id="signupButton" class="btn btn-link">Sign up now 🤘🏼</a>
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <h4 class="font-weight-bold mb-4">Create Account</h4>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <form class="border rounded p-3">
+                              <div class="form-group">
+                                  <label for="firstName">First Name</label>
+                                  <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                              </div>
+                              <div class="form-group">
+                                  <label for="lastName">Last Name</label>
+                                  <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                              </div>
+                              <div class="form-group">
+                                  <label for="password">Password</label>
+                                  <input type="password" class="form-control" id="password" placeholder="Password">
+                              </div>
+                              <div class="form-group">
+                                  <label for="confirmPassword">Confirm Password</label>
+                                  <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                              </div>
+                          </form>
+                      </div>
+                      <div class="col-md-6 text-center">
+                          <img src="images\Group 3.png" alt="Image" class="img-fluid mt-3" style="max-width: 100%;">
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <div class="row w-100 justify-content-center">
+                      <div class="col-md-12 text-center mb-3">
+                          <button type="button" class="btn btn-primary">Create Account</button>
+                          <button type="button" class="btn btn-outline-primary ml-2"><i class="fab fa-facebook"></i> Sign up with Facebook</button>
+                          <button type="button" class="btn btn-outline-danger ml-2"><i class="fab fa-google"></i> Sign up with Google</button>
+                      </div>
+                  </div>
+                  <div class="row w-100 justify-content-center mt-3">
+                      <div class="col-md-12 text-muted text-center">
+                          By signing up, you agree to our <br>
+                          <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Modal for Sign Up -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="signupModalLabel" style="font-size: 16px;">
+                      Sign Up for an Account
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <h4 class="font-weight-bold mb-4">Sign In</h4>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <form class="border rounded p-3">
+                              <div class="form-group">
+                                  <label for="email">Email</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                              </div>
+                              <div class="form-group">
+                                  <label for="password">Password</label>
+                                  <input type="password" class="form-control" id="password" placeholder="Password">
+                              </div>
+                          </form>
+                      </div>
+                      <div class="col-md-6 text-center">
+                          <img src="images\Group 3.png" alt="Image" class="img-fluid mt-3" style="max-width: 100%;">
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <div class="row w-100 justify-content-center">
+                      <div class="col-md-12 text-center mb-3">
+                          <button type="button" class="btn btn-primary">Sign In</button>
+                          <button type="button" class="btn btn-outline-primary ml-2"><i class="fab fa-facebook"></i> Sign up with Facebook</button>
+                          <button type="button" class="btn btn-outline-danger ml-2"><i class="fab fa-google"></i> Sign up with Google</button>
+                      </div>
+                  </div>
+                  <div class="row w-100 justify-content-center mt-3">
+                      <div class="col-md-12 text-muted text-center">
+                          Forgot password? <a href="#">Reset here</a><br>
+                          <a href="#" id="redirectJoinGroup">Don't have an account yet? Create one for free!</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Posts section -->
+        <div class="card mb-3">
+          <img src="images/Rectangle 5.png" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">✍️ Article</h5>
+            <p class="card-text">
+              <small class="text-muted">What if famous brands had regular fonts? Meet RegulaBrands!</small>
+            </p>
+            <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+            <div class="d-flex align-items-center">
+              <img src="images/Rectangle 3 (2).png" class="rounded-circle mr-2" alt="Profile Picture">
+              <p class="card-text mb-0">Sarthak Kamra</p>
+              <div class="ml-auto">
+                <span class="mr-3"><i class="fas fa-eye"></i> 1.4k views</span>
+                <span><i class="fas fa-share"></i> Share</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <img src="images/Rectangle 5 (1).png" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">🔬 Education</h5>
+            <p class="card-text">
+              <small class="text-muted">Tax Benefits for Investment under National Pension Scheme launched by Government</small>
+            </p>
+            <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+            <div class="d-flex align-items-center">
+              <img src="images/Rectangle 3 (3).png" class="rounded-circle mr-2" alt="Profile Picture">
+              <p class="card-text mb-0">Sarah West</p>
+              <div class="ml-auto">
+                <span class="mr-3"><i class="fas fa-eye"></i> 1.4k views</span>
+                <span><i class="fas fa-share"></i> Share</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <img src="images/Rectangle 5 (2).png" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">🗓️ Meetup</h5>
+            <p class="card-text">
+              <small class="text-muted">Finance & Investment Elite Social Mixer @Lujiazui</small>
+            </p>
+            <p class="card-text mb-1">
+              <span class="mr-2"><i class="far fa-calendar-alt"></i> Fri, 12 Oct, 2018 &nbsp; &nbsp;</span>
+              <span><i class="fas fa-map-marker-alt"></i> Ahmedabad, India</span>
+            </p>
+            <p class="card-text">
+              <a href="#" class="btn btn-outline-primary btn-block mt-3">View Website</a>
+            </p>
+            <div class="d-flex align-items-center">
+              <img src="images/Rectangle 3 (4).png" class="rounded-circle mr-2" alt="Profile Picture">
+              <p class="card-text mb-0">Ronal Jones</p>
+              <div class="ml-auto">
+                <span class="mr-3"><i class="fas fa-eye"></i> 1.4k views</span>
+                <span><i class="fas fa-share"></i> Share</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">💼 Job</h5>
+            <p class="card-text">
+              <small class="text-muted">Software Developer</small>
+            </p>
+            <p class="card-text mb-1">
+              <span class="mr-2"><i class="far fa-calendar-alt"></i> Innovaccer Analytics Private Ltd. &nbsp; &nbsp;</span>
+              <span><i class="fas fa-map-marker-alt"></i> Noida, India</span>
+            </p>
+            <p class="card-text">
+              <a href="#" class="btn btn-outline-primary btn-block mt-3">Apply on Timesjobs</a>
+            </p>
+            <div class="d-flex align-items-center">
+              <img src="images/Rectangle 3 (5).png" class="rounded-circle mr-2" alt="Profile Picture">
+              <p class="card-text mb-0">David Grey</p>
+              <div class="ml-auto">
+                <span class="mr-3"><i class="fas fa-eye"></i> 1.4k views</span>
+                <span><i class="fas fa-share"></i> Share</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
