@@ -69,3 +69,12 @@
   width: auto;
   display: inline-block;
 }
+
+  /* Custom styles for padding and alignment */
+  .modal-footer .btn-group {
+    margin-top: 10px; /* Adjust top margin as needed */
+  }
+
+  .modal-footer .btn {
+    margin: 5px; /* Adjust margins between buttons */
+  }
