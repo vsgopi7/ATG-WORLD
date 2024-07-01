@@ -1,13 +1,13 @@
 .navbar-brand img {
   max-width: 100%;
   height: auto;
-  padding: 15px; /* Added padding */
+  padding: 15px; 
 }
 
 .rectangle-2 {
   position: relative;
   text-align: center;
-  padding: 20px 0; /* Added padding */
+  padding: 20px 0; 
 }
 
 .rectangle-2 img {
@@ -61,7 +61,7 @@
 
 .input-group .form-control {
   border-radius: 1rem;
-  padding: 10px; /* Added padding */
+  padding: 10px; 
 }
 
 .btn-create-account {
@@ -70,11 +70,11 @@
   display: inline-block;
 }
 
-  /* Custom styles for padding and alignment */
+
   .modal-footer .btn-group {
-    margin-top: 10px; /* Adjust top margin as needed */
+    margin-top: 10px; 
   }
 
   .modal-footer .btn {
-    margin: 5px; /* Adjust margins between buttons */
+    margin: 5px;
   }
